@@ -1,0 +1,23 @@
+/* Variante A: Skaliert die gesamte Seite proportional hoch (Standard ist 16px) */
+html {
+    font-size: 18px;
+}
+
+/* Variante B: Nur den Fliesstext der Dokumentation vergrössern */
+.gdoc-markdown {
+    font-size: 1.15rem;
+    line-height: 1.7; /* Passender Zeilenabstand für bessere Lesbarkeit */
+}
+
+/* Optional: Schriftgrösse für Code-Blöcke und Inline-Code synchronisieren */
+.gdoc-markdown pre,
+.gdoc-markdown code {
+    font-size: 0.95em;
+}
+
+/* Skaliert die Pfeilspitzen in Mermaid-Diagrammen um 30 % */
+.mermaid marker path {
+    transform: scale(1.3);
+    transform-box: fill-box;
+    transform-origin: center;
+}
